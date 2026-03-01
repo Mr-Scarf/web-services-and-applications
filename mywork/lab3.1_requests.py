@@ -45,8 +45,8 @@ def createbook(book):
     return response.json()
 if __name__ == "__main__":
     book = {
-        "author": "J.K. Rowling",
-        "title": "Harry Potter and the Philosopher's Stone",
+        "author": "Test Author",
+        "title": "Test Book",
         "price": 12.99
     }
 
@@ -63,8 +63,8 @@ def updatebook(id, book):
 
 if __name__ == "__main__":
     book = {
-        "author": "J.K. Rowling",
-        "title": "Harry Potter and the Sorcerer's Stone",
+        "author": "Test Author",
+        "title": "Test Book Updated",
         "price": 14.99
     }
     print(updatebook(1686, book))
