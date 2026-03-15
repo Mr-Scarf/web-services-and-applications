@@ -1,7 +1,7 @@
 
 import requests
 import json
-from config import config as cfg
+from mywork.lab_4.config import config as cfg
 
 filename = "repos-private.json"
 

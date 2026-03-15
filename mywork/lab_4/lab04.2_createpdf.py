@@ -2,7 +2,7 @@
 
 import requests
 import urllib.parse
-from config import apikey # import the API key from the config.py file, which should contain a variable named 'apikey' with the value of your API key. This way, you can keep your API key secure and separate from your main code.
+from mywork.lab_4.config import apikey # import the API key from the config.py file, which should contain a variable named 'apikey' with the value of your API key. This way, you can keep your API key secure and separate from your main code.
 
 # Define the target URL and API key - need to get this from the API provider - in this case, HTML2PDF
 targeturl = "https://andrewbeatty1.pythonanywhere.com/books"
