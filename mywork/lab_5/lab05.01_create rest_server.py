@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 from flask import Flask, url_for, request, redirect, abort
 
 app = Flask(__name__, static_url_path='', static_folder='staticpages')
@@ -31,3 +32,19 @@ def delete(id):
 
 if __name__ == '__main__':
     app.run(debug=True) 
+=======
+# This code creates a simple REST server using the Flask framework in Python.
+from flask import Flask   
+
+# Create a Flask application instance
+app = Flask(__name__)
+
+@app.route('/')  # Define a route for the root URL
+def index():
+    return "Hello, World!"  # Return a simple response when the root URL is accessed
+
+if __name__ == '__main__':
+    app.run(debug=True)  # Run the Flask application in debug mode
+    
+
+>>>>>>> b330bf3ef8f9d58bbc56edfae55adc2ab988f0ae
