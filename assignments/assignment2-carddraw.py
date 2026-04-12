@@ -1,3 +1,8 @@
+
+# Author: David Scally
+
+# Import libraries
+
 import requests
 import json
 
