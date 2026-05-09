@@ -1,6 +1,3 @@
-# web-services-and-applications
-Repo for Web Services and Applications Module - (ATU - Data Analytics)
-
 
 # Web Services and Applications
 
@@ -42,20 +39,36 @@ This file, used to explain the layout of the repository & the project.
 
 
 
-# Project - Project - Guinness Pint App*
+# Project - Guinness Pint App*
 
 ## Purpose
 
-The project is to create a Web application that uses RESTful APIs to perform CRUD (Create, Read, Update, Delete) operations on 
-data stored in a database.
+The project is to create a web application using FLASK & RESTful APIs to perform CRUD (Create, Read, Update, Delete) operations on 
+data stored in a database. 
 
-This application allows users to view & update Guinness prices for pubs in Maynooth.
+
+This application allows users to view, add, update & delete Guinness prices for pubs in Maynooth.
 
 ## Live Application
 
 Hosted on PythonAnywhere:
 
 https://mrscarf.eu.pythonanywhere.com/
+
+## Features
+
+ - View all pint prices
+ - Add a new pub & pint price
+ - Update existing pint price
+ - Delete pub/pints ENTRY
+
+## API Endpoints
+
+    - GET/pints -List all pint prices
+    - GET/pints/<id> - List specific pint price by pub ID
+    - POST/pints - Create a new pint entry
+    - PUT/pints/<id> - Update an existing pint entry by pub ID
+    - DELETE/pints/<id> - Delete a specific pint entry
 
 ## Project Structure
 
@@ -66,6 +79,41 @@ project/
 - pint_dao.py
 - pints.db
 - requirements.txt
+
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/Mr-Scarf/web-services-and-applications.git
+cd web-services-and-applications/project
+```
+
+2. **Create a virtual environment**
+```bash
+python -m venv venv 
+venv\Scripts\activate
+```
+
+3. **Install dependencies - see file 'requirements.txt'**
+
+```bash
+pip install -r requirements.txt
+```
+
+4. **Create the database**
+```bash
+python createschema.py
+```
+
+5. **Run the application**
+```bash
+python pint_app.py
+```
+
+6. **Open in browser:**
+
+http://127.0.0.1:5000/
+
 
   
 
